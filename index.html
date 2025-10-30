@@ -10,6 +10,11 @@
         href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
         rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" 
+    />    
 </head>
 <body>
     <!-- Header  -->
@@ -49,11 +54,78 @@
         <div class="hero-content container">
             <h2>We have the <span>equipment</span> for your trip like this!</h2>
             <div class="hero-btn">
-                <span>View Product</span>
-                <img src="images/arrow-right.png" alt="">
+                <a href="#" class="btn">
+                    <span>View Product</span>
+                    <img src="images/arrow-right.png" alt="">
+                </a>
             </div>
-    </section>
-    <!--Link To JS-->
-    <script src="main.js"></script>
-</body>
+            <!--Hero Image-->
+            <div class="hero-img">
+                <img src="images/hero.png" alt="">
+            </div>
+        </div>
+        <!--Category-->
+        <div class="category container" id="category">
+            <a href="#products">
+                <img src="images/bottom-scroll.png" alt="" class="scroll-bottrom">
+            </a>
+            <div class="category-content">
+                <div class="image-wrapper">
+                    <span></span>
+                    <img src="images/category-bg.png" alt="" class="category-img-1">
+                    <img src="images/category-bg.png" alt="" class="category-img-2">
+                </div>
+                <h2>Product Categories</h2>
+                <!-- Swiper -->
+                <div class="swiper categorySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="category-box">
+                                <img src="images/category-1.png" alt="">
+                                <h3>Torch</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-box">
+                                <img src="images/category-2.png" alt="">
+                                <h3>Mug</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-box">
+                                <img src="images/category-3.png" alt="">
+                                <h3>Chair</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-box">
+                                <img src="images/category-4.png" alt="">
+                                <h3>Bag</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-box">
+                                <img src="images/category-5.png" alt="">
+                                <h3>Camping Tent</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-box">
+                                <img src="images/category-6.png" alt="">
+                                <h3>Sleeping Bag</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!--Link To JS-->
+        <script src="main.js"></script>
+    </body>
 </html> 
